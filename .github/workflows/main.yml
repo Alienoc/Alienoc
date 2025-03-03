@@ -1,6 +1,6 @@
 name: Cl
 
-on: 
+on:
   push:
     branches:
       - main
@@ -32,3 +32,4 @@ jobs:
       - name: Start the bot
         run: |
           nohup python bot.py &
+          sleep 3600  # Keep the job running for an hour (or adjust as needed)
